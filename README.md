@@ -22,6 +22,6 @@ fragColor.a = vertexColor.a; // keeps the transparency for when text fades
 return;
 ```
 
-To scale up the text, inside of your fsh shader, multiply the `corners2[gl_VertexID % 4]` by an amount
+To scale up the text, inside of your vsh shader, multiply the `corners2[gl_VertexID % 4]` by an amount
 
 An example is in [assets/minecraft/shaders/core/](./assets/minecraft/shaders/core/)
