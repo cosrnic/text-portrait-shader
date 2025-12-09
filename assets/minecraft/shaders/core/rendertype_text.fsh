@@ -28,7 +28,7 @@ void main() {
     }
 
     vec4 color = texture(Sampler0, texCoord0) * vertexColor * ColorModulator;
-    if (color.a < 0.1 || color.rgb == vec3(0)) {
+    if (color.a < 0.1 || (custom > 1.0 && color.rgb == vec3(0))) { // discard black pixels only if custom. 
         discard;
     }
     fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
