@@ -5,7 +5,7 @@ A minecraft vanilla shader that lets you to create a 3d view of a player using t
 Credits to [JNNGL](https://github.com/JNNGL) and [Origin Realms](https://originrealms.com/) for the original portrait shader code inspiration. You can find JNNGL's shader [here](https://github.com/JNNGL/vanilla-shaders/tree/main/gui_player_models_base)
 
 ### Usage
-`/title @s title {"type":"object","object":"player",player:{name:"cosrnic"},hat:true,color:"#010000"}`
+`/title @s title {"type":"object","object":"player",player:{name:"cosrnic"},hat:true,color:"#010000",shadow_color:0}`
 
 ### Implementing
 Copy the [assets/minecraft/shaders/include/portrait.glsl](./assets/minecraft/shaders/include/portrait.glsl) into your resource pack.
